@@ -1,18 +1,18 @@
-Feature: Login na plataforma
+Funcionalidade: Login na plataforma
 
-  Como cliente da EBAC-SHOP
-  Quero fazer o login (autenticação) na plataforma
+  Como um cliente da EBAC-SHOP  
+  Quero realizar o login na plataforma  
   Para visualizar meus pedidos
 
-  Background:
+  Contexto:
     Dado que estou na tela de login da EBAC-SHOP
 
-  Scenario: Login com dados válidos
-    Quando eu insiro usuário "cliente@exemplo.com" e senha "senha123"
-    E clico em "Entrar"
-    Então devo ser redirecionado para a tela de checkout
+  Cenário: Login com dados válidos
+    Quando insiro o usuário "cliente@exemplo.com" e a senha "senha123"
+    E clico no botão "Entrar"
+    Então sou redirecionado para a tela de checkout
 
-  Scenario: Login com dados inválidos
-    Quando eu insiro usuário "cliente@exemplo.com" e senha "senhaErrada"
-    E clico em "Entrar"
-    Então deve ser exibida a mensagem de alerta "Usuário ou senha inválidos"
+  Cenário: Login com dados inválidos
+    Quando insiro o usuário "cliente@exemplo.com" e a senha "senhaErrada"
+    E clico no botão "Entrar"
+    Então o sistema exibe a mensagem de alerta "Usuário ou senha inválidos"
